@@ -3,7 +3,7 @@ result = []
 
 for i in range(1, 21):
     for j in range(i+1, 21):
-        if (i + j) % n == 0 or n % (i + j) == 0:
+        if (i + j) <= n and (i + j) % n == 0 or n % (i + j) == 0:
             result.append(i)
             result.append(j)
 
